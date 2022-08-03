@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2017, 11:17:20 PM
+    Author     : Babai
+*/
+@charset "UTF-8";
+
+table{
+    font: bold large serif ;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+    border:3px solid #1CAD14;
+    margin-left: 5%;
+    padding: 5px;
+    font-weight: 40;
+    width:85%;
+    padding-bottom: 10px;
+}
+table td{
+    padding: 15px;
+    border: 3px solid #1CAD14;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+table th{
+    border: none;
+    padding-left: 40px;
+    text-decoration: underline;
+}
+
+body{
+   background: url(login.jpg);
+    
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    background-size: cover;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+    
+}
+h1{
+    color: white;
+    text-shadow: 3px 5px 5px rgba(0,0,0,1.0);
+}
+
+
+header {
+    background: #1CAD14;
+    color:white;
+    text-align: left;
+    background-color: rgba(28, 173, 20, 0.89);
+}
+
+
+footer {
+    background: #1CAD14;
+    color:white;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.61);
+    font-size: 40;
+}
+
+.nav ol {
+    list-style-type: none;
+    padding-left:  20px;
+    padding-top: 30px;
+    font-size: 40;
+    font:bold medium cursive;
+}
+.nav ol a:link,.nav ol a:visited {
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 40;
+    background-color: #1CAD14;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav ol a:hover,.nav ol a:active {
+    background-color: rgba(28, 173, 20, 0.59);
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
